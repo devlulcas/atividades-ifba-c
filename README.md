@@ -9,6 +9,32 @@ O objetivo do repositório é manter anotações e os exercícios resolvidos dis
 
 ## 👨🏻‍💻 COMO RODAR 👨🏻‍💻
 
+### INSTALAR LINUX NO WINDOWS
+
+- Abra o PowerShell como administrador e execute:
+```ps1
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+```
+
+- Reinicie seu PC
+
+- Habilite a virtualização
+```ps1
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
+- Reinicie seu PC outra vez
+
+- [Baixar o pacote de atualização do kernel do Linux para 64x](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+- Execute e instale 
+- Faça com que o linux seja distribuido como WSL2 por padrão
+```ps1
+wsl --set-default-version 2
+```
+- [Escolha uma distribuição na loja da Microsoft](https://aka.ms/wslstore)
+* Sugestão: Ubuntu (Pesquise e baixe)
+- Agora siga o passo a passo para a distribução que você está utilizando:
+
 ### 🐧 LINUX 🐧
 - Instale o GCC, um compilador para a linguagem C:
 
