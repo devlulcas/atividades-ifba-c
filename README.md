@@ -9,7 +9,7 @@ O objetivo do repositório é manter anotações e os exercícios resolvidos dis
 
 ## 👨🏻‍💻 COMO RODAR 👨🏻‍💻
 
-### INSTALAR LINUX NO WINDOWS
+### 💊 INSTALAR LINUX NO WINDOWS 💊
 
 - Abra o PowerShell como administrador e execute:
 ```ps1
