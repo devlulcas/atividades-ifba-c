@@ -8,6 +8,18 @@
 O objetivo do repositório é manter anotações e os exercícios resolvidos disponíveis.
 
 ## 👨🏻‍💻 COMO RODAR 👨🏻‍💻
+<br>
+
+### 📁 CLONE O REPOSITÓRIO ou FAÇA DOWNLOAD 📁
+- Clonando:
+```bash
+git clone https://github.com/devlulcas/atividades-ifba-c.git
+```
+
+- Baixe o repositório zipado:
+[Clique aqui para baixar!](https://github.com/devlulcas/atividades-ifba-c/archive/refs/heads/main.zip)
+
+<br>
 
 ### 💊 INSTALAR LINUX NO WINDOWS 💊
 
