@@ -1,3 +1,11 @@
+/*
+  Desenvolva um programa em C que auxilie o IFBA - Campus Barreiras a calcular a média de notas
+dos alunos nos cursos técnicos de Informática e Edificações. O programa deve receber do
+coordenador de curso a soma das notas dos 26 alunos do curso técnico de Informática e a soma das
+notas dos 26 alunos do curso de Edificações. Por fim, o programa deve informar qual dos cursos
+obteve a maior média das notas.
+*/
+
 #include <stdio.h>
 
 
