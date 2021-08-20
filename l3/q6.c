@@ -1,3 +1,10 @@
+/*
+  Desenvolva um programa em C que auxilie o IFBA - Campus Barreiras a verificar a validade de uma
+senha [6 dígitos] do sistema SUAP fornecida pelo usuário. A senha válida é o número 918273. Devem
+ser impressas as seguintes mensagens no programa: ACESSO PERMITIDO AO USUÁRIO, caso a
+senha seja válida. ACESSO NEGADO AO USÚARIO, caso a senha seja inválida
+*/
+
 #include <stdio.h>
 
 int main()
@@ -14,6 +21,8 @@ int main()
   printf("Qual a senha?\n");
   scanf("%d", &pswd);
 
+  //IF ternário => (condição) ? executa_caso_verdadeiro : executa_caso_falso;
+  //Obs: não é indicado aninhar ifs ternários pois torna a interpretação mais complicada.
   (pswd == valid_pswd) ? printf("ACESSO PERMITIDO AO USUÁRIO") : printf("ACESSO NEGADO AO USUÁRIO");
   
   return(0);
