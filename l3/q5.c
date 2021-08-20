@@ -1,3 +1,11 @@
+/*
+  Desenvolva um programa em C que auxilie o IFBA - Campus Barreiras em relação a quantidade de
+alunas e alunos no curso técnico integrado de Informática. Depois esse programa deve informar se
+essa turma possui mais alunos ou mais alunas. Se essa turma possuir a quantidade de alunos maior
+que a de alunas, informe o total de alunos dessa turma. Além disso, o programa deve verificar se a
+quantidade de alunos é igual a de alunas.
+*/
+
 #include <stdio.h>
 
 int main()
