@@ -10,9 +10,9 @@ int main()
   int a, b, c;
   a = 10;
   b = 3;
-  c = a % b;
-  c += 10;
-  c --;
-  printf("Resultado %d\n", c);
+  c = a % b; // c = 10 % 3 ou seja c = 1
+  c += 10; // c += 10 ou seja c = c + 10 ou seja c = 1 + 10 oou seja c = 11
+  c --; // c -- ou seja c -= 1 ou seja c = c - 1 ou seja c = 11 - 1 ou seja c = 10
+  printf("Resultado %d\n", c); //Resultado 10
   return(0);
 }
