@@ -16,40 +16,41 @@ int main()
   printf("\tProfessor: Djalma A. Lima Filho\n");
   printf("\tAluno(a): Lucas Alves Rego \n\n\n");
 
-  int informatica, edificacoes, alimentos, total;
+  int informatica, edificacoes, total;
 
   printf("Digite a quantidade de alunos matriculados em informática:\n");
   scanf("%d", &informatica);
-  
-  printf("Digite a quantidade de alunos matriculados em alimentos:\n");
-  scanf("%d", &alimentos);
 
   printf("Digite a quantidade de alunos matriculados em edificações:\n");
   scanf("%d", &edificacoes);
 
-  total = informatica + edificacoes + alimentos;
-  printf("Total de alunos = %d\n", total);
+  total = informatica + edificacoes;
   
-  if (informatica == edificacoes && edificacoes == alimentos ) {
-    printf("Todos possuem a mesma quantidade de estudantes");
+  printf("Alunos em informática = %d\n", informatica);
+  printf("Alunos em edificações = %d\n", edificacoes);
+  
+
+  if (informatica == edificacoes) {
+    printf("Todos possuem a mesma quantidade de estudantes = %d", total);
     return 0;
   }
   
-  /*
-  | 0 && 0  = 0 |
-  | 0 && 1  = 0 |
-  | 1 && 1  = 1 |
-  | 1 && 0  = 0 | 
-  */
 
-  if (edificacoes > informatica && edificacoes > alimentos) {
+  if (edificacoes > informatica) {
     printf("Edificações é o curso com mais estudantes, possuindo %d estudantes", edificacoes); 
-  }
-  else if ( alimentos > informatica && alimentos > edificacoes) {
-    printf("Alimentos é o curso com mais estudantes, possuindo %d estudantes", alimentos); 
-  }
-  else {
+  } else if (edificacoes < informatica) {
     printf("Informática é o curso com mais estudantes, possuindo %d estudantes", informatica); 
   }
+
+
+  if (!informatica) {
+    printf("Não existem alunos matrículados no curso de informática!\n");
+  }
+  
+  if (!edificacoes) {
+    printf("Não existem alunos matrículados no curso de edificações!\n");
+  }
+
+
   return(0);
 }
