@@ -17,43 +17,35 @@ int main()
   printf("\tProfessor: Djalma A. Lima Filho\n");
   printf("\tAluno(a): Lucas Alves Rego \n\n\n");
 
-  float notas[5];
-  float media = 0;
+  //Ler 5 notas
+  //Nota 1 = 5.6
 
-  printf("Digite a nota I:\n");
-  scanf("%f", &notas[0]);
+  //float nota0, nota1, nota2, nota3, nota4; // CINCO VARIÁVEIS
+  float nota[5], media, soma;
 
-  printf("Digite a nota II:\n");
-  scanf("%f", &notas[1]);
+  for (int contador = 0; contador < 5; contador++ ) {
+    printf("Digite a nota %d do aluno:\n", contador);
+    scanf("%f", &nota[contador]);
 
-  printf("Digite a nota III:\n");
-  scanf("%f", &notas[2]);
-
-  printf("Digite a nota IV:\n");
-  scanf("%f", &notas[3]);
-
-  printf("Digite a nota V:\n");
-  scanf("%f", &notas[4]);
-
-  for (int i = 0; i < 5; i++)
-  {
-    media += notas[i];
+    soma += nota[contador]; // 10 + 8 + 9 + 10 + 0
   }
 
-  media /= 5;
+  media = soma / 5;
 
-  printf("Sua média foi de %.2f pontos\n", media);
-  if (media >= 7)
-  {
-    printf("Aluno(a) Aprovado na disciplina de ED!\n");
+  printf("A média do aluno foi: %.2f\n", media);
+
+  // media >= 7 => PASSOU
+  // media < 7 => REPROVOU
+  // 4 >= media < 7 => PROVA FINAL
+
+  if (media >= 7) {
+    printf("PASSOU");
   }
-  else if (media >= 4 && media < 7)
-  {
-    printf("Aluno(a) em prova final da disciplina ED!");
-  }
-  else
-  {
-    printf("Aluno(a) reprovado na disciplina ED!");
+  else {
+    printf("REPROVOU\n");
+    if (media >= 4) {
+      printf("VOCÊ ESTÁ NA PROVA FINAL");
+    }
   }
 
   return (0);
