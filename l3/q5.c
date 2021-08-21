@@ -14,19 +14,6 @@ int main()
   printf ("\tDisciplina: Estrutura de Dados - Turma 732.\n");
   printf("\tProfessor: Djalma A. Lima Filho\n");
   printf("\tAluno(a): Lucas Alves Rego \n\n\n");
-  /*
-  Desenvolva um programa em C que auxilie o IFBA - Campus Barreiras em relação a quantidade de
-  alunas e alunos no curso técnico integrado de Informática. 
-  
-  Depois esse programa deve informar se
-  essa turma possui mais alunos ou mais alunas. 
-  
-  Se essa turma possuir a quantidade de alunos maior
-  que a de alunas, informe o total de alunos dessa turma. 
-  
-  Além disso, o programa deve verificar se a
-  quantidade de alunos é igual a de alunas.
-  */
 
   int infogirls, infoboys, total;
 
@@ -42,7 +29,7 @@ int main()
     printf("Garotas são a maioria!");
   }
   else {
-    total = infoboys + infoboys;
+    total = infoboys + infogirls;
     printf("Garotos são a maioria!\n");
     printf("Existem %d alunos na turma, %d são garotos e %d são garotas", total, infoboys, infogirls);
   }
